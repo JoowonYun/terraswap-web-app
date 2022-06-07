@@ -35,7 +35,7 @@ jobs:
             run: yarn
             
           - name: Build
-            run: yarn build
+            run: CI=false yarn build
     
           - name: Transfer to S3 for serving static
             uses: jakejarvis/s3-sync-action@master
